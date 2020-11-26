@@ -60,6 +60,7 @@
 		<div class="col-12">
             <h1 class="display-1">Login</h1>
         </div>
+		<form method="POST">
         <fieldset class="form-group">
 
             <div class="form-group">
@@ -75,6 +76,22 @@
             </div><!-- form-group -->
             <button class="btn btn-primary" type="submit">Submit</button>
         </fieldset>
+		</form>
+<?php
+
+//not empty
+
+if ($_POST) {
+    $errors = array();
+
+//start validation
+    if(empty($_POST['username'])){
+        $errors['username1'] = "Your username cannot be empty";
+    }
+    if(empty($_POST['pwd'])){
+        $errors['pwd1'] = "Your password cannot be empty";
+    }
+    }?>
 	</div>
 </div>
 <!--- Footer -->

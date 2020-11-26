@@ -60,6 +60,7 @@
 		<div class="col-12">
 			<h1 class="display-1">Register</h1>
 		</div>
+		<form method="POST">
 		<fieldset class="form-group">
 
             <div class="form-group">
@@ -93,7 +94,8 @@
             <input type="file" name="myFile" name="filename">
             <button class="btn btn-primary" type="submit">Submit</button>
         </fieldset>
-		<?php
+		</form>
+<?php
 
 //not empty
 
@@ -116,15 +118,8 @@ if ($_POST) {
     if(empty($_POST['surname'])){
         $errors['surname1'] = "Your surname cannot be empty";
     }
-//check errors
-    if (count($errors) == 0) {
-        //redirect to success page
-        header("Location: success.php");
-        exit();
-    }
 }
-
-		?>
+?>
 	</div>
 </div>
 <!--- Footer -->
