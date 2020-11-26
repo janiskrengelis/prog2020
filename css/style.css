@@ -1,0 +1,113 @@
+body {
+    height: 100%;
+    width: 100%;
+    color: #222;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+.container-fluid {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.welcome {
+    width: 80%;
+    padding-left: 20%;
+}
+.display-1{
+    margin-top: -250px;
+}
+
+
+
+
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/*--- Fixed Background Image --*/
+#clothes{
+    background-image:url(img/clothes.jpg);
+}
+#litter{
+    background-image:url(img/litter.jpg);
+}
+#feeding{
+    background-image:url(img/feeding.jpg);
+}
+#grooming{
+    background-image:url(img/grooming.jpg);
+}
+#bathing{
+    background-image:url(img/bathing.jpg);
+}
+#safety{
+    background-image:url(img/safety.jpg);
+}
+#downtime{
+    background-image:url(img/downtime.jpg);
+}
+#playtime{
+    background-image:url(img/playtime.jpg);
+}
+
+
+.fixed {
+    background-size:cover;
+    background-attachment:fixed;
+    min-height: 350px;
+}
+/*---Media Queries --*/
+@media only screen and (max-width: 1000px) {
+    .welcome {
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbar-brand img{
+        width:40px;
+        height:40px;
+    }
+    .navbar-brand h1{
+        font-size:1.8rem;
+    }
+}
+@media (max-width: 576px) {
+    .display-1{
+        font-size:3rem;
+        margin-top:-150px;
+    }
+    .display-4{
+        font-size:3rem;
+    }
+    .fixed{
+        min-height: 200px;
+    }
+}
+@media (max-width: 420px) {
+    iframe{
+        display:none;
+        }
+    table{
+    display:none;
+}
+}
